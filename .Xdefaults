@@ -1,0 +1,7 @@
+# XTERM CONF #
+XTerm*Foreground: green3
+XTerm*background: black
+XTerm*faceName: Liberation Mono
+XTerm*faceSize: 8
+XTerm*metaSendsEscape: true
+#XTerm*on2Clicks: regex [^ \n]

@@ -1,0 +1,3 @@
+defscrollback 5000
+defutf8 on
+caption always "%{gk} %`$USER%`@%H %{kG}%?%-Lw%?%{gk}%n*%f %t%? (%u)%?%{kG}%?%+Lw%? %-=%{gk} %D %d.%m.%Y %c:%s"
