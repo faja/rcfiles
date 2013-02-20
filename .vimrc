@@ -1,5 +1,6 @@
 set nocompatible                    " don't try to be compatible with vi
 set showcmd                         " show (partial) command in status line
+set ignorecase                      " use case insensitive search
 set hlsearch                        " when there is a previous search pattern, highlight all its matches
 set incsearch                       " while typing a search command, show immediately where the so far typed pattern matches
 set ruler                           " show the line and column number of the cursor position, separated by a comma
