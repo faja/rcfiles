@@ -12,9 +12,9 @@ set backspace=2                     " make backspace work normal
 set whichwrap+=,h,l                 " backspace and cursor keys wrap to
 set expandtab                       " use the appropriate number of spaces to insert a <Tab>
 set smarttab                        " when on, a <Tab> in front of a line inserts blanks according to 'shiftwidth'. 'tabstop' is used in other places
-set tabstop=4                       " number of spaces that a <Tab> in the file counts for
-set shiftwidth=4                    " number of spaces to use for each step of (auto)indent
-set softtabstop=4                   " makes spaces feel like tabs (like deleting)
+set tabstop=2                       " number of spaces that a <Tab> in the file counts for
+set shiftwidth=2                    " number of spaces to use for each step of (auto)indent
+set softtabstop=2                   " makes spaces feel like tabs (like deleting)
 set encoding=utf-8
 set paste
 set pastetoggle=<F11>
