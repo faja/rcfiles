@@ -1,3 +1,6 @@
+# to make use of this config file, XENVIRONMENT must be set,
+# eg: XENVIRONMENT=~/.Xdefaults
+
 # XTERM CONF #
 XTerm*Foreground: green3
 XTerm*background: black
@@ -5,3 +8,19 @@ XTerm*faceName: Liberation Mono
 XTerm*faceSize: 8
 XTerm*metaSendsEscape: true
 #XTerm*on2Clicks: regex [^ \n]
+
+## vt fonts sizes
+## to change CTRL+RIGHT_MOUSE
+# unreadable - font1 
+XTerm*faceSize1: 4
+# tiny - font2
+XTerm*faceSize2: 9
+# small - font3
+XTerm*faceSize3: 10
+# medium - font4
+XTerm*faceSize4: 14
+# large - font5
+XTerm*faceSize5: 20
+# huge - font6
+XTerm*faceSize6: 28
+
