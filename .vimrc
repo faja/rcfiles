@@ -25,3 +25,11 @@ filetype plugin indent on
 colorscheme default
 " colorscheme elflord
 " colorscheme murphy
+
+" INDENT plugin: https://github.com/nathanaelkane/vim-indent-guides
+"let g:indent_guides_enable_on_vim_startup = 1
+"let g:indent_guides_auto_colors = 0
+"let g:indent_guides_guide_size = 1
+"let g:indent_guides_start_level = 2
+"hi IndentGuidesOdd  ctermbg=7
+"hi IndentGuidesEven ctermbg=7
