@@ -5,4 +5,5 @@ PS1="\[\e[1;32m\]\w \[\e[0m\]$ "
 
 #bind C-q to beginning-of-line, usefull while working in screen
 stty start undef
+stty start ^K
 bind "\C-q":beginning-of-line
