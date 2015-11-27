@@ -1,0 +1,2 @@
+echo outfile: /tmp/strace.$1
+sudo strace -ttt -T -p $1 -o /tmp/strace.$1

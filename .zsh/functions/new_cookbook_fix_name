@@ -1,0 +1,8 @@
+REAL_COOKBOOK_NAME=$(echo ${PWD##/*/} | awk -F '-' '{print $2}')
+
+sed -i "s/cookbook-${REAL_COOKBOOK_NAME}/${REAL_COOKBOOK_NAME}/g" \
+  metadata.rb \
+  README.md \
+  recipes/default.rb \
+  spec/unit/recipes/default_spec.rb \
+  test/integration/default/serverspec/default_spec.rb

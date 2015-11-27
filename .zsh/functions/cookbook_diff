@@ -1,0 +1,18 @@
+COOKBOOK_NAME=$(awk -F"'" '$1~/^name\s+$/ {print $2}' metadata.rb)
+CHEF_VERSION=$(knife cookbook show $COOKBOOK_NAME -c ~/.chef/knife.rb | awk '{print $2}')
+print -P "cookbook name: %B%F{6}${COOKBOOK_NAME}%b%f"
+echo fetching tags from github
+git fetch
+git pull
+echo
+print -P "chef server: %B%F{6}${CHEF_VERSION}%b%f"
+print -P "git master:  %B%F{6}$(git describe --tags)%b%f"
+echo
+TAG=$(eval git tag -l "'${CHEF_VERSION}*'")
+if test -z $TAG
+then
+  echo no tag $CHEF_VERSION in git:\(
+  return 1
+fi
+echo git diff master vs $TAG
+git diff master $TAG

@@ -1,0 +1,10 @@
+if [[ -f ${1}.back ]]
+then
+  print ${1}.back exists
+  if read -q '?Do you want to overwrite it? (y/n): '
+  then
+    sudo cp -p $1{,.back}
+  fi
+else
+  sudo cp -p $1{,.back}
+fi

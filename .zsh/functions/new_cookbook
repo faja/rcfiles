@@ -1,0 +1,3 @@
+chef generate cookbook -g ~/GitRepos/DS/chef-code-generator $1
+cd $1
+new_cookbook_fix_name

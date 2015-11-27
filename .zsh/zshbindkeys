@@ -1,0 +1,13 @@
+bindkey "^[[24~" universal-argument     # F12
+bindkey "^[[1~" beginning-of-line       # home
+bindkey "^[[4~" end-of-line             # end
+bindkey "^[[3~" delete-char-or-list     # delete
+
+bindkey "^T" history-incremental-search-forward
+
+bindkey -s '^["' '""^B'
+bindkey -s "^['" "''^B"
+bindkey -s '^[(' '()^B'
+bindkey -s '^[[' '[]^B'
+bindkey -s '^[{' '{}^B'
+bindkey -s '^[<' '<>^B'

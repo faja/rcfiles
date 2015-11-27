@@ -1,0 +1,19 @@
+alias l='ls -la --color=auto'
+alias p='pwd'
+alias g='grep --color'
+alias t='tmux'
+alias lg='ls -la --color=auto | grep --color'
+
+alias ke='knife environment'
+
+alias gp='git pull'
+alias gs='git status'
+alias ga='git add'
+alias gpullm='git pull origin master'
+alias git_branch_clean='git branch | grep -v master | xargs -i git branch -d {}'
+
+alias shutdown_as_root='sudo shutdown -P now'
+alias wifi-on='sudo wifi-menu'
+
+alias ssh_vpn="ssh -o HostKeyAlgorithms=ssh-rsa,ssh-dss -o Ciphers=aes128-cbc,3des-cbc -A"
+alias cssh_vpn='cssh -o "-o HostKeyAlgorithms=ssh-rsa,ssh-dss -o Ciphers=aes128-cbc,3des-cbc"'

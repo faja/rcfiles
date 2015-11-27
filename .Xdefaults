@@ -24,3 +24,9 @@ XTerm*faceSize5: 20
 # huge - font6
 XTerm*faceSize6: 28
 
+# colors in less,man,etc..
+*VT100.colorBDMode:     true
+*VT100.colorBD:         red
+*VT100.colorULMode:     true
+*VT100.colorUL:         cyan
+*VT100.veryBoldColors:  6
